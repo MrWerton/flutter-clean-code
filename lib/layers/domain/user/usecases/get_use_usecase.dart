@@ -3,8 +3,8 @@ import 'package:dartz/dartz.dart';
 
 import 'package:flutter_clean_arch/common/error/failures.dart';
 import 'package:flutter_clean_arch/common/usecase/usecase.dart';
-import 'package:flutter_clean_arch/layers/domain/user/entities/user.dart';
-import 'package:flutter_clean_arch/layers/domain/user/repositories/user_repository.dart';
+import '../entities/user.dart';
+import '../repositories/user_repository.dart';
 
 class GetUserUseCase implements UseCase<User, GetUserParams> {
   final UserRepository _userRepository;
