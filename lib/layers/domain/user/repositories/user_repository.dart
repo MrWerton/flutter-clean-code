@@ -4,6 +4,6 @@ import '../entities/user.dart';
 
 abstract class UserRepository {
   Future<Either<Failure, void>> create({required User user});
-  Future<Either<Failure, void>> getAll();
-  Future<Either<Failure, void>> get({required String id});
+  Future<Either<Failure, List<User>>> getAll();
+  Future<Either<Failure, User>> get({required String id});
 }
